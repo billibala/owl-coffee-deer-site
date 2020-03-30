@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Atttach - Feedback</title>
+		<link rel="shortcut icon" href="images/favicon.png">
+		<link href='https://fonts.googleapis.com/css?family=Varela+Round|Handlee' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="style.css" title="Style" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="style-2x.css" title="Style" type="text/css" media="screen and (-webkit-min-device-pixel-ratio: 2)" charset="utf-8">
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-7959776-6', 'auto');
+		  ga('send', 'pageview');
+		
+		  feedbackLink = function(linkObj, actionName) {
+			  ga('send', 'event', 'Feedback', 'click', actionName, {
+				  'hitCallback' : function() {
+					  document.location = linkObj.href;
+				  }
+			  });
+		  }
+		
+		</script>
+	</head>
+	<body>
+		<div id="woodWall">
+			<div class="topLine"></div>
+		</div>
+		<div id="outerBound" style="height: 660px;">
+			<div id="paper" style="height: 610px;">
+				<div id="logoDiv">
+					<div id="betaBubble"></div>
+				</div>
+				<div id="paperLinesLayer">
+					<div id="paperLeftLine"></div>
+					<ul id="paperHorizontalLines">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div id="paperContent">
+					<h1 class="heading">Tell us what you think about &ndash; <span id="calloutTag">Atttach</span></h1>
+					<ul id="feedbackList">
+					 <li>Give feature feedback &ndash; <a href="https://docs.google.com/forms/d/1jOA6cvon9-504LY0Zvx5A6W6PDgJu4G_UWMcnKDo7h8/viewform?usp=send_form" onclick="feedbackLink(this, 'feature'); return false;">click here</a></li>
+					 <li>Share my opinion on pricing &ndash; <a href="https://docs.google.com/forms/d/16V9v55eHunmAWy5T56SF7o_5dm0om4EnpYYgZ3R-z7Q/viewform?usp=send_form" onclick="feedbackLink(this, 'pricing'); return false;">click here</a></li>
+					 <li>General feedback, bug report &ndash; <a href="http://support.headnix.com/anonymous_requests/new?ticket[fields[43384]]=atttach" onclick="feedbackLink(this, 'other'); return false;">click here</a></li>
+					</ul>
+					<p class="elaboration">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please use these links whenever you want to tell us something about Atttach!</p>
+				</div>
+			</div>
+			<p id="copyright">&copy; Headnix 2014</p>
+		</div>
+	</body>
+</html>

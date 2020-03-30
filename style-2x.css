@@ -1,0 +1,48 @@
+#woodWall {
+	background-image: url('images/dark-wood_2x.jpg');
+}
+#logoDiv {
+	background-image: url('images/beta-logo_2x.png');
+}
+#betaBubble {
+	background-image: url('images/beta-callout_2x.png');
+}
+#betaBubble:hover {
+	background-image: url('images/beta-callout_2x.png');
+}
+#checkList li {
+	background-image:url('images/check-bullet_2x.png');
+}
+#calloutTag {
+	background-image: url('images/stash_2x.png');
+}
+.linkButton {
+	background-image: -webkit-image-set(url('images/button-background.png') 1x, url('images/button-background_2x.png') 2x);
+}
+.linkButton:active {
+	background-image: -webkit-image-set(url('images/button-background.png') 1x, url('images/button-background_2x.png') 2x);
+}
+#twitterShare.shareButton {
+	background-image: -webkit-image-set(url('images/share-icons.png') 1x, url('images/share-icons_2x.png') 2x);
+}
+#facebookShare.shareButton {
+	background-image: -webkit-image-set(url('images/share-icons.png') 1x, url('images/share-icons_2x.png') 2x);
+}
+#dribbbleShare.shareButton {
+	background-image: -webkit-image-set(url('images/share-icons.png') 1x, url('images/share-icons_2x.png') 2x);
+}
+#gplusShare.shareButton {
+	background-image: -webkit-image-set(url('images/share-icons.png') 1x, url('images/share-icons_2x.png') 2x);
+}
+#pinterestShare.shareButton {
+	background-image: -webkit-image-set(url('images/share-icons.png') 1x, url('images/share-icons_2x.png') 2x);
+}
+#projectViewScreenshot {
+	background-image: -webkit-image-set(url('images/screenshots/message-viewer.jpg') 1x, url('images/screenshots/message-viewer-2x.jpg') 2x);
+}
+#messageViewScreenshot {
+	background-image: -webkit-image-set(url('images/screenshots/compose-view.jpg') 1x, url('images/screenshots/compose-view-2x.jpg') 2x);
+}
+#todoViewScreenshot {
+	background-image: -webkit-image-set(url('images/screenshots/todo-management.jpg') 1x, url('images/screenshots/todo-management-2x.jpg') 2x);
+}

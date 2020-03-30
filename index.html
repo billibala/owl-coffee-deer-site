@@ -1,0 +1,95 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Be a beta tester of Atttach!</title>
+		<link rel="shortcut icon" href="images/favicon.png">
+		<link href='https://fonts.googleapis.com/css?family=Varela+Round|Handlee' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="style.css" title="Style" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="style-2x.css" title="Style" type="text/css" media="screen and (-webkit-min-device-pixel-ratio: 2)" charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" charset="utf-8"></script>
+		<script src="script.js" charset="utf-8"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-7959776-6', 'auto');
+		  ga('send', 'pageview');
+		  
+		</script>
+	</head>
+	<body>
+		<div id="woodWall">
+			<div class="topLine"></div>
+		</div>
+		<div id="outerBound">
+			<div id="paper" itemscope itemtype="http://schema.org/SoftwareApplication">
+				<div id="logoDiv">
+					<div id="betaBubble"></div>
+				</div>
+				<div id="paperLinesLayer">
+					<div id="paperLeftLine"></div>
+					<ul id="paperHorizontalLines">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div id="paperContent">
+					<div class="pageMeta">
+						<div itemprop="softwareVersion">Beta</div>
+						<div itemprop="operatingSystem">Mac OS X</div>
+						<a itemprop="url" href="http://atttach.com">URL</a>
+						<a itemprop="thumbnailUrl" href="images/screenshots/message-viewer.jpg">screen shot</a>
+						<a itemprop="image" href="images/beta-logo.png">logo</a>
+						<div itemprop="creator" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Headnix</span> <a itemprop="url" href="http://headnix.com">site</a></div>
+					</div>
+					<h1 class="heading">This is an invitation to all Basecamp users.</h1>
+					<ul id="checkList" itemprop="featureList">
+						<li>if you... use Mac and Basecamp</li>
+						<li>if you... send/receive messages ritually</li>
+						<li>if you... want super fast message and todo list browsing</li>
+						<li>if you... want to all attachments at your finger tip</li>
+					</ul>
+					<h1 class="intentionClause">We wanna invite you to test our new app &ndash; <span id="calloutTag" itemprop="name">Atttach</span></h1>
+					<p class="elaboration" itemprop="description">Atttach is a 3rd-party Basecamp app for Mac. Atttach makes managing Basecamp comments, todos and attachments fast and easy.</p>
+					<form name="requestBeta" id="requestBetaForm" method="post"><label for="emailField">Try it now</label><span class="fieldBorder"><input type="text" name="email" id="emailField" placeholder="Email Address"> <a id="submitRequestButton" class="linkButton" rel="Request for beta version of Atttach" href="javascript:void(0)">Sign Up</a></span>
+						<div id="whyEmail">
+							<div id="whyEmailCallout">
+								<div>
+									<p>You are joining the beta testing program to make Atttach better fits your workflow.</p>
+									<p>We need your email to send you download instruction and keep you informed about the development process.</p>
+									<p><strong>No</strong> spamming. <strong>No</strong> sharing with 3rd-parties. You can unsubscribe anytime.</p>
+								</div>
+								<div class="arrow-down"></div>
+								<div class="arrow-down" id="backingArrow"></div>
+							</div>
+							<div><a href="javascript:showWhyEmailCallout()">Why do we need your email?</a><a id="helpLink" href="mailto:support@headnix.zendesk.com">Need help?</a></div>
+						</div>
+					</form>
+					<h1 class="intentionClause">See Atttach in action...</h1>
+					<div id="screenshotSection">
+						<a itemprop="screenshot" href="https://www.flickr.com/photos/billibala/14989010908/in/set-72157646553218955"><div class="thumbnailScreenshot" id="projectViewScreenshot"></div></a>
+						<a itemprop="screenshot" href="https://www.flickr.com/photos/billibala/14988944040/in/set-72157646553218955"><div class="thumbnailScreenshot" id="messageViewScreenshot"></div></a>
+						<a itemprop="screenshot" href="https://www.flickr.com/photos/billibala/14989011178/in/set-72157646553218955"><div class="thumbnailScreenshot" id="todoViewScreenshot"></div></a>
+					</div>
+					<p class="elaboration">Did you just have the design mockups ready? Drag-and-drop the files to Atttach. Type your message and "Send". Your message will be on Basecamp ready for others to comment.</p>
+					<p class="elaboration"><a href="#requestBetaForm">Sign up</a> the beta test program to try it yourself!</p>
+					<p class="elaboration">To know more about us and why we build this, check our <a href="http://blog.atttach.com">blog</a> or follow us <a href="http://twitter.com/atttach">@atttach</a>.</p>
+				</div>
+				<div id="spotLightFill"></div>
+			</div>
+			<div id="sharebar"><div class="arrow-down"></div><p>SHARE: <a id="twitterShare" class="shareButton" rel="Share in Twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fatttach.com&text=%40Atttach+for+Mac+is+recruiting+beta+tester.+Check+it+out+if+you+are+%23basecamp+user%21">Twitter</a> <a id="facebookShare" class="shareButton" rel="Share in Facebook" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fatttach.com&t=%40Atttach+app+is+recruiting+beta+tester.+Check+it+out+if+you+are+%23basecamp+user%21">Facebook</a> <a id="gplusShare" class="shareButton" rel="Share in Google+" href="https://plus.google.com/share?url=http%3A%2F%2Fatttach.com">Google+</a> <a id="dribbbleShare" class="shareButton" rel="Share in Dribbble" target="_blank" href="http://dribbble.com/shots/917351-Atttach-app-icon">Dribbble</a> <a id="pinterestShare" class="shareButton" rel="Share in Pinterest" target="_blank" href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fatttach.com&media=http%3A%2F%2Fatttach.com%2Fsite.png&description=Atttach+-+Basecamp+app+for+Mac.+Manage+Basecamp+messages+and+todos+.">Pinterest</a></p></div>
+			<p id="copyright">&copy; Owl Coffee Deer Ltd. 2020</p>
+			<p id="siteCredit">Created by <a href="http://headnix.com" rel="Headnix company site">Headnix</a> and <a href="http://rodneychow.com" rel="Rodney Chow">Rodzilla</a></p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,410 @@
+body {
+	font-family: "Varela Round", "Lucida Grande", sans-serif;
+	color: #333;
+	padding: 0;
+	margin: 0;
+	background-color: #eaeaea;
+}
+h1 {
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	font-size: 20px;
+	margin: 0;
+}
+h1.heading {
+	line-height: 64px;
+	font-size: 28px;
+}
+.pageMeta {
+	display: none;
+}
+#woodWall {
+	position: absolute;
+	background: url('images/dark-wood.jpg') repeat -40px 0;
+	-webkit-background-size: 128px 512px;
+	top: 290px;
+	bottom: 0;
+	width: 100%;
+	height: 1600px;
+}
+#woodWall > .topLine {
+	position: absolute;
+	top: 1px;
+	height: 1px;
+	width: 100%;
+	background-color: gray;
+}
+#outerBound {
+	position: absolute;
+	width: 880px;
+	height: 1690px;
+	left: 50%;
+	top: 72px;
+	margin: 0 0 0 -440px;
+}
+#paper {
+	width: 100%;
+	height: 1640px;
+	z-index: 0;
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px #888;
+	box-shadow: 0 0 5px #888, inset 0 0 5px white;
+	background-color: #f6f6f6;
+	position: absolute;
+}
+#logoDiv {
+	background: url('images/beta-logo.png') no-repeat;
+	width: 186px;
+	height: 230px;
+	-webkit-background-size: 183px 202px;
+	left: 50%;
+	top: -55px;
+	position: relative;
+	z-index: 11;
+	margin-left: -86px;
+	text-indent: -9999px;
+	cursor: hand;
+}
+#betaBubble {
+	position: absolute;
+	background: url('images/beta-callout.png') 0 19px;
+	width: 95px;
+	height: 19px;
+	-webkit-background-size: 95px 38px;
+	left: 149px;
+	top: 126px;
+}
+#betaBubble:hover {
+	background: url('images/beta-callout.png') 0 0;
+}
+#paperLinesLayer {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	top: 0;
+}
+#paperContent {
+/* 	display: none; */
+	width: 570px;
+	position: absolute;
+	z-index: 20;
+	left: 190px;
+	top: 144px;
+}
+#paperLeftLine {
+	background-color: #e30040;
+	width: 2px;
+	height: 100%;
+	opacity: 0.45;
+	position: absolute;
+	left: 92px;
+}
+#paperHorizontalLines {
+	list-style-type: none;
+	padding: 0 2px;
+	margin-top: 210px;
+}
+#paperHorizontalLines li {
+	height: 2px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.1);
+	margin-bottom: 30px;
+}
+#paperHorizontalLines li:nth-child(6) {
+	background-color: rgba(0,0,0,0.075);
+}
+#paperHorizontalLines li:nth-child(7) {
+	background-color: rgba(0,0,0,0.05);
+}
+#paperHorizontalLines li:nth-child(8) {
+	background-color: rgba(0,0,0,0.03);
+}
+#paperHorizontalLines li:nth-child(9) {
+	background-color: rgba(0,0,0,0.025);
+}
+#paperHorizontalLines li:nth-child(10) {
+	background-color: rgba(0,0,0,0.02);
+}
+#checkList {
+	list-style-type: none;
+	padding: 4px 0 0 0;
+	margin: 0;
+}
+#checkList li {
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 2px;
+	vertical-align: top;
+	text-indent: 32px;
+	background-image:url('images/check-bullet.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	-webkit-background-size: 24px 30px;
+}
+.elaboration {
+	font-size: 13px;
+	color: #666;
+	line-height: 20px;
+	width: 540px;
+	margin: 8px 0;
+}
+.elaboration a, .elaboration a:visited {
+	color: #007fc9;
+	text-decoration: none;
+}
+h1.intentionClause {
+	margin-top: 34px;
+	line-height: 30px;
+}
+#calloutTag {
+	font-size: 26px;
+	color: #009cff;
+	display: inline-block;
+	background: url('images/stash.png') no-repeat 0 bottom;
+	-webkit-background-size: 94px 3px;
+	vertical-align: middle;
+}
+h1.heading > #calloutTag
+{
+	background: url('images/stash.png') no-repeat 0 46px;
+}
+#requestBetaForm {
+	margin: 32px 0 2px 0;
+	-webkit-font-smoothing: antialiased;
+	line-height: 35px;
+	-webkit-transition: all 250ms ease-in-out;
+}
+.errorMessage, .successMessage {
+	line-height: normal;
+	border: thin solid red;
+	border-radius: 4px;
+	padding: 6px;
+	text-align: center;
+}
+.successMessage {
+	border: thin solid grey;
+}
+.errorMessage > h2, .successMessage > h2 {
+	margin: 0;
+	font-size: 16px;
+}
+.errorMessage p, .successMessage p {
+	font-size: 12px;
+	margin: 4px 0 0 0;
+}
+.errorMessage a, .successMessage a {
+	color: #009cff;
+	font-weight: bold;
+	text-decoration: none;
+}
+.fieldBorder {
+	display: inline-block;
+	margin-left: 10px;
+	border-radius: 4px;
+	padding: 5px;
+	background-image: -webkit-linear-gradient(top, #e3e3e3, #fff);
+}
+#requestBetaForm input[type="text"] {
+	display: inline-block;
+	vertical-align: middle;
+	width: 260px;
+	height: 35px;
+	font-size: 18px;
+}
+#requestBetaForm label {
+	display: inline-block;
+	height: 35px;
+	vertical-align: middle;
+	font-size: 20px;
+}
+.linkButton {
+	display: inline-block;
+	vertical-align: middle;
+	width: 102px;
+	height: 35px;
+	font-size: 18px;
+	-webkit-background-size: 102px 70px;
+	background: url('images/button-background.png') 0 0;
+	box-shadow: 0 4px 6px -4px black;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	text-shadow: 0px 1px 1px black;
+}
+.linkButton:active {
+	background: url('images/button-background.png') 0 35px;
+}
+.highlightEmailField {
+	-webkit-animation-name: highlightField;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: normal;
+	-webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes highlightField {
+	0% {
+		background: white;
+	}
+	50% {
+		background: #09f;
+	}
+	100% {
+		background: white;
+	}
+}
+.shareButton {
+	text-indent: -9999px;
+	width: 36px;
+	height: 36px;
+	display: inline-block;
+	-webkit-background-size: 216px 36px;
+}
+#twitterShare.shareButton {
+	background: url('images/share-icons.png') 0 0;
+}
+#facebookShare.shareButton {
+	background: url('images/share-icons.png') -36px 0;
+}
+#dribbbleShare.shareButton {
+	background: url('images/share-icons.png') -144px 0;
+}
+#gplusShare.shareButton {
+	background: url('images/share-icons.png') -72px 0;
+}
+#pinterestShare.shareButton {
+	background: url('images/share-icons.png') -108px 0;
+}
+#spotLightFill {
+	position: absolute;
+	top: 388px;
+	left: 50%;
+	margin-left: -160px;
+	width: 320px;
+	height: 320px;
+	background-image: -webkit-radial-gradient(center, closest-side, rgba(255,255,255,0.75), rgba(255,255,255,0) 100%);
+}
+#sharebar {
+	position: absolute;
+	color: white;
+	z-index: 50;
+	bottom: -2px;
+	left: 50%;
+	width: 284px;
+	margin-left: -146px;
+}
+#sharebar p {
+	margin: 16px 0 0 0;
+	font-size: 13px;
+	line-height: 36px;
+}
+.arrow-down {
+	width: 0; 
+	height: 0;
+	position: absolute;
+	margin-left: -3px;
+	left: 50%;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 8px solid #f6f6f6;
+}
+#copyright, #siteCredit {
+	position: absolute;
+	bottom: -12px;
+	color: #b0b0b0;
+	font-size: 11px;
+	margin-top: 16px;
+	line-height: 36px;
+}
+#siteCredit {
+	right: 0;
+}
+#whyEmailCallout {
+	display: none;
+	position: absolute;
+	width: 170px;
+	font: 14px Helvetica, "Helvetica Neue", Arial, Geneva, sans-serif;
+	color: #efefef;
+	top: -240px;
+	left: -10px;
+}
+#whyEmailCallout > :first-child {
+	background-color: #09f;
+	border-radius: 4px;
+	padding: 8px 8px 1px 8px;
+	box-shadow: 0 0 5px #888;
+}
+#whyEmailCallout > .arrow-down {
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #09f;
+	margin-left: -10px;
+	left: 85px;
+	position: absolute;
+	z-index: 2;
+}
+#whyEmailCallout > #backingArrow.arrow-down {
+	z-index: 1;
+	margin-top: 1px;
+	border-top: 10px solid #a1a1a1;
+}
+#whyEmailCallout p {
+	margin: 0 0 8px 0;
+	line-height: 15px;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+}
+#whyEmail {
+	position: relative;
+	display: block;
+	margin: 2px 0 0 110px;
+	line-height: normal;
+}
+#whyEmail a {
+	font-size: 11px;
+	text-decoration: none;
+	color: #999;
+}
+#whyEmail a:hover {
+	text-decoration: underline;
+}
+#siteCredit a, #siteCredit a:visited {
+	color: #007fc9;
+	text-decoration: none;
+}
+#helpLink {
+	text-indent: 114px;
+	display: inline-block;
+}
+/*! Feedback */
+#feedbackList {
+/* 	list-style-type: none; */
+	padding: 4px 0 0 0;
+	margin: 0 0 38px 32px;
+}
+#feedbackList li {
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 2px;
+	vertical-align: top;
+}
+#feedbackList li a {
+	color: #007fc9;
+	text-decoration: none;
+}
+/*! Screenshot */
+.thumbnailScreenshot {
+	width: 570px;
+	height: 292px;
+	margin-bottom: 8px;
+	background-repeat: no-repeat;
+}
+#projectViewScreenshot {
+	background-image: url('images/screenshots/message-viewer.jpg');
+}
+#messageViewScreenshot {
+	background-image: url('images/screenshots/compose-view.jpg');
+}
+#todoViewScreenshot {
+	background-image: url('images/screenshots/todo-management.jpg');
+}
